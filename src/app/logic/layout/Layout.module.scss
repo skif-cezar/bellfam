@@ -1,0 +1,20 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "hero"
+    "main"
+    "footer";
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.main {
+  grid-area: main;
+}
