@@ -1,6 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "src/app/logic/layout/Layout.module.scss";
+import {Hero} from "src/app/logic/hero/Hero";
 
 /**
  *  Path to main page
@@ -16,7 +17,7 @@ export const Layout: React.FC = () => {
 
   return (
     <div className={WRAPPER_STYLES}>
-      Hero section
+      <Hero />
       <main className={MAIN_STYLES}>
         About
         App Featyres
