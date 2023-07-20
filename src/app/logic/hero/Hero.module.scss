@@ -1,29 +1,105 @@
 .hero {
   width: 100%;
   max-width: 1440px;
-  height: 715px;
-  //background-image: url(../../../resources/promo-bg.jpg);
+  min-height: 1024px;
+  background-image: url(../../../resources/background.jpg);
+  background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-position: center;
-  background-color: #5956E9;
+  background-color: #5956e9;
   &__container {
-    max-width: 534px;
-    margin-top: 152px;
-    margin-left: 184px;
+    display: flex;
+    align-items: center;
+    column-gap: 174px;
+    margin-left: 135px;
+    margin-top: 82px;
   }
-  &__title {
-    font-size: 2.78rem;
-    line-height: 1.24;
-    color: #533738;
-  }
-  &__description {
-    max-width: 440px;
-    margin-top: 24px;
-  }
+}
+
+.poster {
+  position: relative;
+}
+
+.container {
+  display: block;
+  position: relative;
+  width: 570px;
+  height: 432px;
+  padding: 40px 30px;
+  background-color: #fff;
+}
+
+.border {
+  display: block;
+  position: absolute;
+  width: 570px;
+  height: 535px;
+  display: block;
+  border: 18px solid #7572ff;
+  top: -50px;
+  left: 50px;
+}
+
+.title {
+  margin-top: 18px;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: #5956e9;
+}
+
+.subtitle {
+  margin-top: 52px;
+  font-size: 1.56rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 37.5px;
+  text-transform: uppercase;
+  color: #232233;
+}
+
+.text {
+  width: 100%;
+  max-width: 517px;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #6c6c72;
+}
+
+.buttons {
+  margin-top: 5px;
+}
+
+.google_btn,
+.appstore_btn {
+  display: inline-block;
+  font-size: 0px;
+  outline: none;
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.google_btn{
+  width: 149px;
+  height: 47px;
+  background-image: url(../../../resources/google-play-icon.png);
+}
+
+.appstore_btn {
+  width: 151px;
+  height: 45px;
+  background-image: url(../../../resources/app-store-icon.png);
 }
 
 .hidden {
