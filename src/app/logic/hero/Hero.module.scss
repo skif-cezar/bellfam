@@ -1,7 +1,7 @@
 .hero {
   width: 100%;
-  max-width: 1440px;
   min-height: 1024px;
+  padding-top: 216px;
   background-image: url(../../../resources/background.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -14,8 +14,11 @@
     display: flex;
     align-items: center;
     column-gap: 174px;
-    margin-left: 135px;
-    margin-top: 82px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__img {
+    width: 426px;
   }
 }
 
@@ -41,6 +44,7 @@
   border: 18px solid #7572ff;
   top: -50px;
   left: 50px;
+  font-size: 0;
 }
 
 .title {
@@ -90,7 +94,7 @@
   cursor: pointer;
 }
 
-.google_btn{
+.google_btn {
   width: 149px;
   height: 47px;
   background-image: url(../../../resources/google-play-icon.png);
@@ -99,6 +103,7 @@
 .appstore_btn {
   width: 151px;
   height: 45px;
+  margin-left: 14px;
   background-image: url(../../../resources/app-store-icon.png);
 }
 

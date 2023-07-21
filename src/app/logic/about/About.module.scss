@@ -1,0 +1,32 @@
+.about {
+  width: 100%;
+  min-height: 1014px;
+  padding: 120px 135px 120px 161px;
+  background-color: #fff;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #232233;
+}
+
+.text {
+  width: 100%;
+  max-width: 601px;
+  margin: 18px auto 0 auto;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: #6c6c72;
+}
+
+.container {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+}

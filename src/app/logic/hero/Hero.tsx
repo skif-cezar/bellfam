@@ -1,7 +1,6 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "src/app/logic/hero/Hero.module.scss";
-import {Header} from "src/app/components/header/Header";
 import mobileAppSrc from "src/resources/mobile-app-hero.png";
 
 /**
@@ -10,6 +9,7 @@ import mobileAppSrc from "src/resources/mobile-app-hero.png";
 export const Hero: React.FC = () => {
   const HERO_STYLES = clsx(styles.hero);
   const HERO_CONTAINER_STYLES = clsx(styles.hero__container);
+  const HERO_IMG_STYLES = clsx(styles.hero__img);
   const TITLE_HIDDEN_STYLES = clsx(styles.hidden);
   const POSTER_STYLES = clsx(styles.poster);
   const TEXT_CONTAINER_STYLES = clsx(styles.container);
@@ -24,7 +24,6 @@ export const Hero: React.FC = () => {
   return (
     <section className={HERO_STYLES}>
       <h1 className={TITLE_HIDDEN_STYLES}>ELD Fleet Management Platform. BELLFAM</h1>
-      <Header />
       <div className={HERO_CONTAINER_STYLES}>
         <div className={POSTER_STYLES}>
           <span className={BORDER_STYLES}>Border</span>
@@ -42,7 +41,7 @@ export const Hero: React.FC = () => {
             </div>
           </article>
         </div>
-        <div>
+        <div className={HERO_IMG_STYLES}>
           <img
             src={mobileAppSrc}
             alt="Screenshot of the application on a mobile device."

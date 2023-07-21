@@ -3,6 +3,8 @@
   width: 100%;
   max-width: 1170px;
   margin: 35px auto 0 auto;
+  z-index: 5;
+  grid-area: header;
 }
 .logo {
   display: block;
