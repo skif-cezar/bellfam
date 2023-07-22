@@ -2,6 +2,7 @@ import React from "react";
 import clsx from "clsx";
 import styles from "src/app/logic/about/About.module.scss";
 import mobileAppSrc from "src/resources/mobile-app-about.png";
+import {Card} from "src/app/components/card/Card";
 
 /**
  * About section
@@ -11,6 +12,7 @@ export const About: React.FC = () => {
   const TITLE_STYLES = clsx(styles.title);
   const TEXT_STYLES = clsx(styles.text);
   const CONTAINER_STYLES = clsx(styles.container);
+  const CARDS_STYLES = clsx(styles.cards);
 
   return (
     <section className={ABOUT_STYLES}>
@@ -29,11 +31,25 @@ export const About: React.FC = () => {
             height="526"
           />
         </div>
-        <div>
-          <article>
-            <h3>Text</h3>
-            <p>dbvhdbhvbd</p>
-          </article>
+        <div className={CARDS_STYLES}>
+          <Card
+            title="Creative design"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+            Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
+          />
+          <Card
+            title="easy to use"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+            Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
+          />
+          <Card
+            title="Best user experince"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+            Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
+          />
         </div>
       </div>
     </section>

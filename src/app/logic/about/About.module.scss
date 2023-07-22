@@ -30,3 +30,9 @@
   margin-top: 60px;
   justify-content: space-between;
 }
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
