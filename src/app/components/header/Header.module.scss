@@ -9,6 +9,7 @@
 .logo {
   display: block;
   position: absolute;
+  padding: 3px 14px 0 28px;
   top: 24px;
   width: 200px;
   height: 90px;
@@ -22,9 +23,15 @@
   z-index: 1;
 
   & a {
-    font-size: 1.75rem;
+    // font-size: 1.75rem;
+    display: block;
+    font-size: 0;
     font-weight: 600;
     color: #232233;
+    background-image: url(../../../resources/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 .mail {
