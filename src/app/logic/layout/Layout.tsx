@@ -4,6 +4,7 @@ import styles from "src/app/logic/layout/Layout.module.scss";
 import {Hero} from "src/app/logic/hero/Hero";
 import {About} from "src/app/logic/about/About";
 import {Header} from "src/app/components/header/Header";
+import {Features} from "src/app/logic/features/Features";
 
 /**
  *  Path to main page
@@ -24,7 +25,8 @@ export const Layout: React.FC = () => {
       <main className={MAIN_STYLES}>
         <Hero />
         <About />
-        App Featyres App Screen Shot Download App Now How to use the appp perfectly Our reative team
+        <Features />
+        App Screen Shot Download App Now How to use the appp perfectly Our reative team
         Our Happy Customers Our recent blog
       </main>
       <div className={FOOTER_STYLES}>Footer</div>

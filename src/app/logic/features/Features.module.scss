@@ -1,0 +1,140 @@
+.features {
+  width: 100%;
+  min-height: 1710px;
+  padding: 120px 135px 120px 175px;
+  background-image: url(../../../resources/features-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-color: #5956e9;
+
+  &__container {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 0px 0px;
+    justify-items: center;
+    align-items: center;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". chat ."
+      "features image system"
+      "design image greaphics"
+      ". support .";
+  }
+
+  &__img {
+    grid-area: image;
+  }
+  &__img img {
+    position: relative;
+    left: 9%;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.chat,
+.feature,
+.design,
+.system,
+.greaphics,
+.support {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.chat,
+.support {
+  text-align: center;
+  align-items: center;
+}
+
+.feature,
+.design {
+  align-items: flex-end;
+  text-align: end;
+}
+
+.system,
+.greaphics {
+  align-items: flex-start;
+  text-align: start;
+}
+
+.chat {
+  grid-area: chat;
+}
+
+.feature {
+  grid-area: features;
+}
+
+.design {
+  grid-area: design;
+}
+
+.system {
+  grid-area: system;
+}
+
+.greaphics {
+  grid-area: greaphics;
+}
+
+.support {
+  grid-area: support;
+}
+
+.chat h5,
+.feature h5,
+.design h5,
+.system h5,
+.greaphics h5,
+.support h5 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.chat p,
+.feature p,
+.design p,
+.system p,
+.greaphics p,
+.support p {
+  margin-top: 18px;
+  max-width: 297px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.text {
+  width: 100%;
+  max-width: 601px;
+  margin: 18px auto 0 auto;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+}
