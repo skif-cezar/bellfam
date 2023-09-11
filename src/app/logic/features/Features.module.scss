@@ -49,6 +49,15 @@
   align-items: flex-start;
 }
 
+.chat h5,
+.feature h5,
+.design h5,
+.system h5,
+.greaphics h5,
+.support h5 {
+  margin-top: 22px;
+}
+
 .chat,
 .support {
   text-align: center;
@@ -71,24 +80,84 @@
   grid-area: chat;
 }
 
+.chat::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../../../resources/comment.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .feature {
   grid-area: features;
+}
+
+.feature::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../../../resources/surface-icon.png);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .design {
   grid-area: design;
 }
 
+.design::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../../../resources/design-icon.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .system {
   grid-area: system;
+}
+
+.system::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../../../resources/phone-icon.png);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .greaphics {
   grid-area: greaphics;
 }
 
+.greaphics::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../../../resources/eye-scanner-icon.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .support {
   grid-area: support;
+}
+
+.support::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../../../resources/support-icon.png);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .chat h5,
