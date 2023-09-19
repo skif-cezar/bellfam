@@ -1,0 +1,89 @@
+.mySwiper {
+  min-height: 682px;
+}
+
+.mySwiper .swiper-slide {
+  opacity: .75;
+}
+
+.swiper-slide.swiper-slide-active {
+  opacity: 1 !important;
+}
+
+.mySwiper .swiper-slide img {
+  width: 319px;
+  height: 622px;
+  object-fit: cover;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  border: 1px solid #5956e9;
+  transition: all 0.5s ease;
+}
+
+.mySwiper .swiper-button-prev:after,
+.mySwiper .swiper-button-next:after {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 84px;
+  background-color: transparent;
+  font-size: 0;
+  -webkit-mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mySwiper .swiper-button-next:after,
+.mySwiper .swiper-button-prev:after {
+  -webkit-mask-image: url(../../../resources/arrow-slider.svg);
+  background-color: #5956e9;
+}
+
+.mySwiper .swiper-button-prev:after {
+  transform: scale(-1);
+}
+
+.mySwiper .swiper-button-next:hover:after,
+.mySwiper .swiper-button-next:focus:after,
+.mySwiper .swiper-button-next:active:after,
+.mySwiper .swiper-button-prev:hover:after,
+.mySwiper .swiper-button-prev:focus:after,
+.mySwiper .swiper-button-prev:active:after {
+  background-color: #fff;
+}
+
+.mySwiper .swiper-button-next:hover,
+.mySwiper .swiper-button-next:focus,
+.mySwiper .swiper-button-next:active,
+.mySwiper .swiper-button-prev:hover,
+.mySwiper .swiper-button-prev:focus,
+.mySwiper .swiper-button-prev:active {
+  background-color: #5956e9;
+}
+
+.swiper-pagination {
+  position: relative;
+  bottom: 0;
+}
+
+.mySwiper .swiper-pagination .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  margin: 0 18px 0 0 !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #5956e9;
+}
