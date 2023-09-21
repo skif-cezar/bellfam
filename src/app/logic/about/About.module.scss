@@ -27,7 +27,8 @@
 
 .container {
   display: flex;
-  margin-top: 60px;
+  margin: 60px auto 0 auto;
+  max-width: 1144px;
   justify-content: space-between;
 }
 

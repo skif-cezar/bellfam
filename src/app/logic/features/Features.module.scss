@@ -1,6 +1,5 @@
 .features {
   width: 100%;
-  min-height: 1710px;
   padding: 120px 135px 120px 175px;
   background-image: url(../../../resources/features-bg.jpg);
   background-position: center;
@@ -12,7 +11,8 @@
   background-color: #5956e9;
 
   &__container {
-    margin-top: 60px;
+    max-width: 1012px;
+    margin: 60px auto 0 auto;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto auto;

@@ -1,7 +1,6 @@
 .wrapper {
   position: relative;
   width: 100%;
-  max-width: 1440px;
   min-height: 100vh;
   display: grid;
   grid-template-columns: 100%;
@@ -16,7 +15,6 @@
 }
 
 .main {
-  max-width: 1440px;
   grid-area: main;
   grid-row-start: header;
   grid-row-end: main;

@@ -11,6 +11,8 @@
   -o-background-size: cover;
   background-color: #5956e9;
   &__container {
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     column-gap: 174px;
