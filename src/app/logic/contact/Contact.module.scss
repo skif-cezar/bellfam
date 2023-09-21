@@ -1,0 +1,32 @@
+.contact {
+  width: 100%;
+  padding: 120px 135px 120px 175px;
+  background-image: url(../../../resources/features-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-color: #5956e9;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.text {
+  width: 100%;
+  max-width: 601px;
+  margin: 18px auto 0 auto;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+}

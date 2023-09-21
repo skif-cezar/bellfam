@@ -6,6 +6,7 @@ import {About} from "src/app/logic/about/About";
 import {Header} from "src/app/components/header/Header";
 import {Features} from "src/app/logic/features/Features";
 import {ScreenShot} from "src/app/logic/screenshot/ScreenShot";
+import {Contact} from "src/app/logic/contact/Contact";
 
 /**
  *  Path to main page
@@ -28,6 +29,7 @@ export const Layout: React.FC = () => {
         <About />
         <Features />
         <ScreenShot />
+        <Contact />
         How to use the appp perfectly Our reative team
         Our Happy Customers Our recent blog
       </main>
