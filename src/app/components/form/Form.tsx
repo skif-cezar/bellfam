@@ -37,6 +37,7 @@ export const Form: React.FC = () => {
   const onSubmit = (data: any): void => {
     // eslint-disable-next-line no-console
     console.log(data);
+    // Для телефона в конце парсинг tel.replace(/^\+\d{1}[\b](\d{3})[\b]\d{3}-\d{2}-\d{2}$/, "");
     reset();
     /* emailjs.send(SERVICE_ID, TEMPLATE_ID, data, PUBLIC_KEY)
       // eslint-disable-next-line @typescript-eslint/typedef
@@ -94,14 +95,23 @@ export const Form: React.FC = () => {
       <Controller
         name="tel"
         control={control}
-        rules={{required: "This field is required"}}
+        rules={{
+          required: "Phone number is required",
+          minLength: {value: 11, message: "Phone number must be at least 11 digits"},
+        }}
         // eslint-disable-next-line @typescript-eslint/typedef
         render={({field}) => {
           return (
             <InputMask
-              mask="+1 (999) 99-99-99"
-              placeholder="+1 (___) __-__-__"
+              mask="+1 (999) 999-99-99"
+              placeholder="+1 (___) ___-__-__"
               {...field}
+              onChange={(e: any) => {
+                const value = e.target.value.replace(/\D/g, "");
+                // eslint-disable-next-line no-console
+                console.log(value);
+                field.onChange(value);
+              }}
             />
           );
         }}

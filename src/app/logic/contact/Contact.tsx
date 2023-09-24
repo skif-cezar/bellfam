@@ -10,14 +10,17 @@ export const Contact: React.FC = () => {
   const CONTACT_STYLES = clsx(styles.contact);
   const TITLE_STYLES = clsx(styles.title);
   const TEXT_STYLES = clsx(styles.text);
+  const MAIL_STYLES = clsx(styles.mail);
 
   return (
     <section className={CONTACT_STYLES}>
       <h2 className={TITLE_STYLES}>Contact us</h2>
       <p className={TEXT_STYLES}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est
-        tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper
-        velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+        Send a message to
+        <address className={MAIL_STYLES}>
+          <a href="mailto: Info@yourmail.com">Info@yourmail.com</a>
+        </address>
+        or fill out the form so we can contact you.
       </p>
       <Form />
     </section>
