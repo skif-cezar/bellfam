@@ -15,6 +15,9 @@
 }
 
 .text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
   width: 100%;
   max-width: 601px;
   margin: 23px auto 0 auto;

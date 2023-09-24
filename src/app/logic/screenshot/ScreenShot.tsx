@@ -34,9 +34,18 @@ export const ScreenShot: React.FC = () => {
         className={TEXT_STYLES} custom={3}
         variants={animationY}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est
-        tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper
-        velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+        <span>
+          The screenshots show the Bellfam ELD application, which is used in the transport
+          industry to track drivers&#39; working hours and compliance with safety regulations.
+        </span>
+        <span>
+          This shows the main menu of the application, where the user can select the desired
+          function, for example, view his logbook or fill out a vehicle status report.
+        </span>
+        <span>
+          A report filling screen is also shown where the user has to fill in information
+          about the vehicle, route and other details.
+        </span>
       </motion.p>
       <MSlider
         images={imgArray} loopedSlides={2}

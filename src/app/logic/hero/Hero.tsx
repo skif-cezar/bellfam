@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
   const APP_STORE_URL = "https://apps.apple.com/us/app/bellfam-eld/id6451947250";
 
   return (
-    <section className={HERO_STYLES} id="home">
+    <section className={HERO_STYLES} id="download">
       <h1 className={TITLE_HIDDEN_STYLES}>ELD Fleet Management Platform. BELLFAM</h1>
       <motion.div
         className={HERO_CONTAINER_STYLES} initial="hidden"
@@ -47,9 +47,9 @@ export const Hero: React.FC = () => {
               className={TEXT_STYLES} custom={2}
               variants={animationX}
             >
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-              amet.
+              Prevent violations with easy to use & edit electronic logbook app & compliance portal.
+              Top-rated easy-to-use electronic logging devices with reliable driver
+              and fleet manager support to automate FMCSA compliance.
             </motion.p>
             <motion.h4
               className={SUBTITLE_STYLES} custom={2}

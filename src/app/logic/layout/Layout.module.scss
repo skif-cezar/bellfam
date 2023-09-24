@@ -4,7 +4,7 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 149px 1fr 542px;
+  grid-template-rows: 149px 1fr 78px;
   gap: 0px 0px;
   grid-template-areas:
     "header"
@@ -18,8 +18,4 @@
   grid-area: main;
   grid-row-start: header;
   grid-row-end: main;
-}
-
-.footer {
-  grid-area: footer;
 }

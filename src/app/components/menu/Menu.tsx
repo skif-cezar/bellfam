@@ -33,7 +33,7 @@ export const Menu: React.FC = () => {
         <li className={MENU_ITEM_STYLES}>
           <Link
             className={MENU_LINK_STYLES}
-            to="home"
+            to="download"
             activeClass={ACTIVE_LINK_STYLES}
             smooth
             duration={500}
@@ -43,7 +43,7 @@ export const Menu: React.FC = () => {
             role="menuitem"
             aria-hidden="true"
           >
-            Home
+            Download
           </Link>
         </li>
         <li className={MENU_ITEM_STYLES}>

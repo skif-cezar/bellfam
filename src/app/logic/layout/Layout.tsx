@@ -10,6 +10,7 @@ import {ScreenShot} from "src/app/logic/screenshot/ScreenShot";
 import {Contact} from "src/app/logic/contact/Contact";
 import {Eld} from "src/app/logic/eld/Eld";
 import {TopButton} from "src/app/components/buttons/TopButton";
+import {Footer} from "src/app/logic/footer/Footer";
 
 /**
  *  Path to main page
@@ -22,7 +23,6 @@ export const MAIN_PAGE_PATH = "/";
 export const Layout: React.FC = () => {
   const WRAPPER_STYLES = clsx(styles.wrapper);
   const MAIN_STYLES = clsx(styles.main);
-  const FOOTER_STYLES = clsx(styles.footer);
 
   const [toTopButton, setToTopButton] = useState(false);
 
@@ -53,7 +53,7 @@ export const Layout: React.FC = () => {
         <Eld />
         <Contact />
       </main>
-      <div className={FOOTER_STYLES}>Footer</div>
+      <Footer />
 
       {toTopButton && (
         <TopButton

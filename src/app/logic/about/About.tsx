@@ -18,7 +18,8 @@ export const About: React.FC = () => {
 
   return (
     <motion.section
-      className={ABOUT_STYLES} id="about"
+      className={ABOUT_STYLES}
+      id="about"
       initial="hidden"
       whileInView="visible"
       viewport={{amount: 0.2, once: true}}
@@ -33,9 +34,11 @@ export const About: React.FC = () => {
         className={TEXT_STYLES} custom={3}
         variants={animationY}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est
-        tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper
-        velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+        Don&#39;t leave compliance to chance – BELLFAM ELD makes it easy to keep your drivers,
+        vehicles, and fleet DOT-legal. BELLFAM app works with electronic logging hardware (via
+        Bluetooth) and our secure fleet management cloud platform. Stay compliant with the
+        Electronic Logging Device Mandate and provide your drivers with the tools to be efficient
+        and successful with BELLFAM ELD.
       </motion.p>
       <motion.div
         className={CONTAINER_STYLES}
@@ -43,10 +46,7 @@ export const About: React.FC = () => {
         whileInView="visible"
         viewport={{amount: 0.2, once: true}}
       >
-        <motion.div
-          custom={5}
-          variants={animationX}
-        >
+        <motion.div custom={5} variants={animationX}>
           <img
             src={mobileAppSrc}
             alt="Screenshot of the application on a mobile device."
@@ -58,26 +58,24 @@ export const About: React.FC = () => {
           <MCard
             custom={5}
             variants={animationX}
-            title="Creative design"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
+            title="Multi-Channel Support 7 Days A Week"
+            text="Get support when you need it the most via channels you prefer:
+            phone, email, online chat or self-service support center."
           />
           <MCard
             custom={6}
             variants={animationX}
-            title="easy to use"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
+            title="Dedicated Support Manager"
+            text="Get a personalized level of support for any account size.
+            Dedicated support managers are assigned to assist you with installation,
+            onboarding, compliance questions, troubleshooting, and more."
           />
           <MCard
             custom={7}
             variants={animationX}
-            title="Best user experince"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
+            title="Multilingual Support Team"
+            text="The multilingual team of ELD compliance experts makes communication
+             easier than ever before. We speak English and Russian."
           />
         </div>
       </motion.div>
