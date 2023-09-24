@@ -7,6 +7,7 @@ import {Header} from "src/app/components/header/Header";
 import {Features} from "src/app/logic/features/Features";
 import {ScreenShot} from "src/app/logic/screenshot/ScreenShot";
 import {Contact} from "src/app/logic/contact/Contact";
+import {Eld} from "src/app/logic/eld/Eld";
 
 /**
  *  Path to main page
@@ -27,8 +28,9 @@ export const Layout: React.FC = () => {
       <main className={MAIN_STYLES}>
         <Hero />
         <About />
-        <Features />
         <ScreenShot />
+        <Features />
+        <Eld />
         <Contact />
         How to use the appp perfectly Our reative team
         Our Happy Customers Our recent blog

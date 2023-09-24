@@ -15,13 +15,13 @@ export const Contact: React.FC = () => {
   return (
     <section className={CONTACT_STYLES}>
       <h2 className={TITLE_STYLES}>Contact us</h2>
-      <p className={TEXT_STYLES}>
-        Send a message to
+      <div className={TEXT_STYLES}>
+        <p>Send a message to</p>
         <address className={MAIL_STYLES}>
           <a href="mailto: Info@yourmail.com">Info@yourmail.com</a>
         </address>
-        or fill out the form so we can contact you.
-      </p>
+        <p>or fill out the form so we can contact you.</p>
+      </div>
       <Form />
     </section>
   );

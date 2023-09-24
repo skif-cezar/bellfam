@@ -1,16 +1,19 @@
 .slider {
   width: 100%;
-  max-width: 1294px;
+  max-width: 1440px; // 1294px
   margin: 60px auto 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 30px;
 
   &__container {
     width: 100%;
-    max-width: 1066px;
-    min-height: 682px;
+    max-width: 1168px;
+    // min-height: 682px;
     order: 1;
+    flex-shrink: 1;
+    min-width: 0;
   }
 }
 
@@ -21,6 +24,8 @@
   border-radius: 50%;
   border: 1px solid #5956e9;
   transition: all 0.5s ease;
+  flex-basis: 0;
+  flex-shrink: 1;
 }
 
 .prev button,
