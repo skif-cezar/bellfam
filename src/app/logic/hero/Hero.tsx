@@ -21,6 +21,9 @@ export const Hero: React.FC = () => {
   const GOOGLE_BTN_STYLES = clsx(styles.google_btn);
   const APP_STORE_BTN_STYLES = clsx(styles.appstore_btn);
 
+  const GOOGLE_PLAY_URL = "https://play.google.com/store/search?q=bellfam&c=apps&hl=ru&gl=US";
+  const APP_STORE_URL = "https://apps.apple.com/us/app/bellfam-eld/id6451947250";
+
   return (
     <section className={HERO_STYLES}>
       <h1 className={TITLE_HIDDEN_STYLES}>ELD Fleet Management Platform. BELLFAM</h1>
@@ -36,8 +39,24 @@ export const Hero: React.FC = () => {
             </p>
             <h4 className={SUBTITLE_STYLES}>Download App Now</h4>
             <div className={BUTTONS_STYLES}>
-              <button className={GOOGLE_BTN_STYLES} type="button">Google Play</button>
-              <button className={APP_STORE_BTN_STYLES} type="button">App Store</button>
+              <div className={GOOGLE_BTN_STYLES}>
+                <a
+                  href={GOOGLE_PLAY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Google Play
+                </a>
+              </div>
+              <div className={APP_STORE_BTN_STYLES}>
+                <a
+                  href={APP_STORE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  App Store
+                </a>
+              </div>
             </div>
           </article>
         </div>
