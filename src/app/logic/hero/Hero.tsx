@@ -25,7 +25,7 @@ export const Hero: React.FC = () => {
   const APP_STORE_URL = "https://apps.apple.com/us/app/bellfam-eld/id6451947250";
 
   return (
-    <section className={HERO_STYLES}>
+    <section className={HERO_STYLES} id="home">
       <h1 className={TITLE_HIDDEN_STYLES}>ELD Fleet Management Platform. BELLFAM</h1>
       <div className={HERO_CONTAINER_STYLES}>
         <div className={POSTER_STYLES}>

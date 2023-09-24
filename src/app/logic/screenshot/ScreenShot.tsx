@@ -15,7 +15,7 @@ export const ScreenShot: React.FC = () => {
   const imgArray = [IphoneSrc, IphoneSrc, IphoneSrc, IphoneSrc, IphoneSrc];
 
   return (
-    <section className={INTERFACE_STYLES}>
+    <section className={INTERFACE_STYLES} id="screenshot">
       <h2 className={TITLE_STYLES}>Checkout Our App Interface Look</h2>
       <p className={TEXT_STYLES}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est

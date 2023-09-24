@@ -15,7 +15,7 @@ export const About: React.FC = () => {
   const CARDS_STYLES = clsx(styles.cards);
 
   return (
-    <section className={ABOUT_STYLES}>
+    <section className={ABOUT_STYLES} id="about">
       <h2 className={TITLE_STYLES}>About Our App</h2>
       <p className={TEXT_STYLES}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est

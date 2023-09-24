@@ -16,7 +16,7 @@ export const Eld: React.FC = () => {
   const imgArray = [EldSrc1, EldSrc2];
 
   return (
-    <section className={INTERFACE_STYLES}>
+    <section className={INTERFACE_STYLES} id="eld">
       <h2 className={TITLE_STYLES}>How Does ELD Work?</h2>
       <p className={TEXT_STYLES}>
         Electronic logging devices are connected to engine control modules (ECM) via various

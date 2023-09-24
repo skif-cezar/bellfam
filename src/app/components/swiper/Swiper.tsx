@@ -49,7 +49,7 @@ export const Slider: React.FC<SliderInterface> = (props: SliderInterface) => {
         <Swiper
           autoplay={{
             delay: 4500,
-            disableOnInteraction: true,
+            disableOnInteraction: false,
           }}
           onBeforeInit={(swiper: any) => {
             swiperRef.current = swiper;

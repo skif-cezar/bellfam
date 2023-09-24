@@ -37,7 +37,7 @@ export const Menu: React.FC = () => {
             activeClass={ACTIVE_LINK_STYLES}
             smooth
             duration={500}
-            offset={-66}
+            offset={-114}
             spy
             onClick={closeMenu}
             role="menuitem"
@@ -53,7 +53,7 @@ export const Menu: React.FC = () => {
             activeClass={ACTIVE_LINK_STYLES}
             smooth
             duration={500}
-            offset={-66}
+            offset={0}
             spy
             onClick={closeMenu}
             role="menuitem"
@@ -65,27 +65,11 @@ export const Menu: React.FC = () => {
         <li className={MENU_ITEM_STYLES}>
           <Link
             className={MENU_LINK_STYLES}
-            to="features"
-            activeClass={ACTIVE_LINK_STYLES}
-            smooth
-            duration={500}
-            offset={-66}
-            spy
-            onClick={closeMenu}
-            role="menuitem"
-            aria-hidden="true"
-          >
-            Features
-          </Link>
-        </li>
-        <li className={MENU_ITEM_STYLES}>
-          <Link
-            className={MENU_LINK_STYLES}
             to="screenshot"
             activeClass={ACTIVE_LINK_STYLES}
             smooth
             duration={500}
-            offset={-66}
+            offset={0}
             spy
             onClick={closeMenu}
             role="menuitem"
@@ -97,33 +81,49 @@ export const Menu: React.FC = () => {
         <li className={MENU_ITEM_STYLES}>
           <Link
             className={MENU_LINK_STYLES}
-            to="blog"
+            to="features"
             activeClass={ACTIVE_LINK_STYLES}
             smooth
             duration={500}
-            offset={-66}
+            offset={0}
             spy
             onClick={closeMenu}
             role="menuitem"
             aria-hidden="true"
           >
-            Blog
+            Features
           </Link>
         </li>
         <li className={MENU_ITEM_STYLES}>
           <Link
             className={MENU_LINK_STYLES}
-            to="download"
+            to="eld"
             activeClass={ACTIVE_LINK_STYLES}
             smooth
             duration={500}
-            offset={-66}
+            offset={0}
             spy
             onClick={closeMenu}
             role="menuitem"
             aria-hidden="true"
           >
-            Download
+            ELD
+          </Link>
+        </li>
+        <li className={MENU_ITEM_STYLES}>
+          <Link
+            className={MENU_LINK_STYLES}
+            to="contact"
+            activeClass={ACTIVE_LINK_STYLES}
+            smooth
+            duration={500}
+            offset={0}
+            spy
+            onClick={closeMenu}
+            role="menuitem"
+            aria-hidden="true"
+          >
+            Contact Us
           </Link>
         </li>
       </ul>

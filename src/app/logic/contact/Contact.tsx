@@ -13,7 +13,7 @@ export const Contact: React.FC = () => {
   const MAIL_STYLES = clsx(styles.mail);
 
   return (
-    <section className={CONTACT_STYLES}>
+    <section className={CONTACT_STYLES} id="contact">
       <h2 className={TITLE_STYLES}>Contact us</h2>
       <div className={TEXT_STYLES}>
         <p>Send a message to</p>

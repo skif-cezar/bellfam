@@ -20,7 +20,7 @@ export const Features: React.FC = () => {
   const TEXT_STYLES = clsx(styles.text);
 
   return (
-    <section className={FEATURES_STYLES}>
+    <section className={FEATURES_STYLES} id="features">
       <h2 className={TITLE_STYLES}>App features</h2>
       <p className={TEXT_STYLES}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est
