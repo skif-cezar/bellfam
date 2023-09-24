@@ -1,4 +1,5 @@
-import React from "react";
+import React, {forwardRef} from "react";
+import {motion} from "framer-motion";
 import {Controller, Message, useForm} from "react-hook-form";
 import InputMask from "react-input-mask";
 // import emailjs from "@emailjs/browser";
@@ -17,7 +18,7 @@ export type FieldsForm = {
 /**
  * Form component
  */
-export const Form: React.FC = () => {
+export const Form: React.FC = forwardRef((props: any, ref:any) => {
   const FORM_STYLES = clsx(styles.form);
   const FORM_ERRORS_STYLES = clsx(styles.form__errors);
   const BUTTON_STYLES = clsx(styles.button);
@@ -52,7 +53,11 @@ export const Form: React.FC = () => {
   };
 
   return (
-    <form className={FORM_STYLES} onSubmit={handleSubmit(onSubmit)}>
+    <form
+      className={FORM_STYLES} onSubmit={handleSubmit(onSubmit)}
+      ref={ref}
+      {...props}
+    >
       <input
         {...register("fname", {
           minLength: {
@@ -133,4 +138,6 @@ export const Form: React.FC = () => {
       </button>
     </form>
   );
-};
+});
+
+export const MForm = motion(Form);

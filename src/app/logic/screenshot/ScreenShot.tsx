@@ -1,7 +1,9 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "src/app/logic/screenshot/ScreenShot.module.scss";
-import {Slider} from "src/app/components/swiper/Swiper";
+import {motion} from "framer-motion";
+import {animationX, animationY} from "src/app/components/animation/Animation";
+import {MSlider} from "src/app/components/swiper/Swiper";
 import IphoneSrc from "src/resources/slider-image.png";
 
 /**
@@ -15,18 +17,37 @@ export const ScreenShot: React.FC = () => {
   const imgArray = [IphoneSrc, IphoneSrc, IphoneSrc, IphoneSrc, IphoneSrc];
 
   return (
-    <section className={INTERFACE_STYLES} id="screenshot">
-      <h2 className={TITLE_STYLES}>Checkout Our App Interface Look</h2>
-      <p className={TEXT_STYLES}>
+    <motion.section
+      className={INTERFACE_STYLES} id="screenshot"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{amount: 0.2, once: true}}
+    >
+      <motion.h2
+        className={TITLE_STYLES}
+        custom={2}
+        variants={animationY}
+      >
+        Checkout Our App Interface Look
+      </motion.h2>
+      <motion.p
+        className={TEXT_STYLES} custom={3}
+        variants={animationY}
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est
         tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper
         velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.
-      </p>
-      <Slider
+      </motion.p>
+      <MSlider
         images={imgArray} loopedSlides={2}
         stretch={10} depth={100}
         modifier={2.5} slidesPerView={5}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{amount: 0.2, once: true}}
+        custom={2}
+        variants={animationX}
       />
-    </section>
+    </motion.section>
   );
 };

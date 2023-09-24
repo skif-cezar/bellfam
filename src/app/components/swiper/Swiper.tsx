@@ -1,4 +1,5 @@
-import React, {useRef} from "react";
+import React, {forwardRef, useRef} from "react";
+import {motion} from "framer-motion";
 import clsx from "clsx";
 import styles from "src/app/components/swiper/Swiper.module.scss";
 import "src/app/components/swiper/Swiper.scss";
@@ -32,7 +33,7 @@ interface SliderInterface {
 /**
  * Slider component
  */
-export const Slider: React.FC<SliderInterface> = (props: SliderInterface) => {
+export const Slider: React.FC<SliderInterface> = forwardRef((props: SliderInterface, ref: any) => {
   const swiperRef = useRef<SwiperType>();
 
   const SLIDER_STYLES = clsx(styles.slider);
@@ -40,11 +41,8 @@ export const Slider: React.FC<SliderInterface> = (props: SliderInterface) => {
   const PREV_BTN_STYLES = clsx(styles.prev);
   const NEXT_BTN_STYLES = clsx(styles.next);
 
-  // eslint-disable-next-line no-console
-  console.log(props.images);
-
   return (
-    <article className={SLIDER_STYLES}>
+    <article className={SLIDER_STYLES} ref={ref}>
       <article className={CONTAINER_STYLES}>
         <Swiper
           autoplay={{
@@ -107,4 +105,6 @@ export const Slider: React.FC<SliderInterface> = (props: SliderInterface) => {
       </div>
     </article>
   );
-};
+});
+
+export const MSlider = motion(Slider);

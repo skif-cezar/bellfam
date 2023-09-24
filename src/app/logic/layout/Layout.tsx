@@ -52,8 +52,6 @@ export const Layout: React.FC = () => {
         <Features />
         <Eld />
         <Contact />
-        How to use the appp perfectly Our reative team
-        Our Happy Customers Our recent blog
       </main>
       <div className={FOOTER_STYLES}>Footer</div>
 
