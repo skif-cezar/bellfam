@@ -1,0 +1,11 @@
+/* TEAM */
+	Frontend developer:Yuri Prigara
+	Linkedin: https://www.linkedin.com/in/yuri-prigara/
+	Telegram: @ram_max
+	From: Gomel, Belarus
+
+/* SITE */
+	Last update: 2023/09/25
+	Language: English / Russian
+	Doctype: HTML5
+	IDE: Visual Studio Code, Figma, Adobe Photoshop

@@ -4,6 +4,7 @@ import styles from "src/app/logic/hero/Hero.module.scss";
 import mobileAppSrc from "src/resources/mobile-app-hero.png";
 import {motion} from "framer-motion";
 import {animationX} from "src/app/components/animation/Animation";
+import {DownloadButtons} from "src/app/components/buttons/DownloadButtons";
 
 /**
  * Hero section
@@ -20,11 +21,6 @@ export const Hero: React.FC = () => {
   const SUBTITLE_STYLES = clsx(styles.subtitle);
   const BORDER_STYLES = clsx(styles.border);
   const BUTTONS_STYLES = clsx(styles.buttons);
-  const GOOGLE_BTN_STYLES = clsx(styles.google_btn);
-  const APP_STORE_BTN_STYLES = clsx(styles.appstore_btn);
-
-  const GOOGLE_PLAY_URL = "https://play.google.com/store/search?q=bellfam&c=apps&hl=ru&gl=US";
-  const APP_STORE_URL = "https://apps.apple.com/us/app/bellfam-eld/id6451947250";
 
   return (
     <section className={HERO_STYLES} id="download">
@@ -61,22 +57,7 @@ export const Hero: React.FC = () => {
               className={BUTTONS_STYLES} custom={2}
               variants={animationX}
             >
-              <div className={GOOGLE_BTN_STYLES}>
-                <a
-                  href={GOOGLE_PLAY_URL} target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Google Play
-                </a>
-              </div>
-              <div className={APP_STORE_BTN_STYLES}>
-                <a
-                  href={APP_STORE_URL} target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  App Store
-                </a>
-              </div>
+              <DownloadButtons />
             </motion.div>
           </article>
         </div>

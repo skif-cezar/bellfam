@@ -12,7 +12,7 @@ export interface CardProps {
 }
 
 /**
- * Card section
+ * Card component
  */
 export const Card: React.FC<CardProps> = forwardRef((props: CardProps, ref: any) => {
   const CARD_STYLES = clsx(styles.card);
