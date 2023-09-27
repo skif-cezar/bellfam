@@ -55,16 +55,16 @@ export const Slider: React.FC<SliderInterface> = forwardRef((props: SliderInterf
           effect="coverflow"
           centeredSlides
           loop
-          loopedSlides={props.loopedSlides} // 2
+          loopedSlides={props.loopedSlides}
           spaceBetween={0}
           coverflowEffect={{
             rotate: 0,
-            stretch: props.stretch, // -10
-            depth: props.depth, // 100
-            modifier: props.modifier, // 2.5
+            stretch: props.stretch,
+            depth: props.depth,
+            modifier: props.modifier,
           }}
           grabCursor
-          slidesPerView={props.slidesPerView} // 5
+          slidesPerView={props.slidesPerView}
           pagination={{clickable: true}}
           navigation={{
             prevEl: PREV_BTN_STYLES,
@@ -75,7 +75,6 @@ export const Slider: React.FC<SliderInterface> = forwardRef((props: SliderInterf
         >
           {props.images["map"]((img: any, index: number) => {
             return (
-              // eslint-disable-next-line react/no-array-index-key
               <SwiperSlide key={index}>
                 <img alt="Bellfam App" src={img} />
               </SwiperSlide>

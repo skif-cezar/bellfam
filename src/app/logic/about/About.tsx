@@ -46,7 +46,7 @@ export const About: React.FC = () => {
         whileInView="visible"
         viewport={{amount: 0.2, once: true}}
       >
-        <motion.div custom={5} variants={animationX}>
+        <motion.div custom={2} variants={animationX}>
           <img
             src={mobileAppSrc}
             alt="Screenshot of the application on a mobile device."
@@ -56,14 +56,17 @@ export const About: React.FC = () => {
         </motion.div>
         <div className={CARDS_STYLES}>
           <MCard
-            custom={5}
+            custom={2}
             variants={animationX}
             title="Multi-Channel Support 7 Days A Week"
             text="Get support when you need it the most via channels you prefer:
             phone, email, online chat or self-service support center."
           />
           <MCard
-            custom={6}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{amount: 0.4, once: true}}
+            custom={2}
             variants={animationX}
             title="Dedicated Support Manager"
             text="Get a personalized level of support for any account size.
@@ -71,7 +74,10 @@ export const About: React.FC = () => {
             onboarding, compliance questions, troubleshooting, and more."
           />
           <MCard
-            custom={7}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{amount: 0.5, once: true}}
+            custom={3}
             variants={animationX}
             title="Multilingual Support Team"
             text="The multilingual team of ELD compliance experts makes communication

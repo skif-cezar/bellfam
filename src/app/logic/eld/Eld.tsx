@@ -36,7 +36,7 @@ export const Eld: React.FC = () => {
       >
         Electronic logging devices are connected to engine control modules (ECM) via various
         diagnostic ports and synchronized with trucks/buses, driver apps, and the fleet manager
-        portal. HOS247 ELD hardware is proven to be reliable, can be installed in minutes, and
+        portal. ELD hardware is proven to be reliable, can be installed in minutes, and
         connected to most Android/IOS smartphones and tablets via Bluetooth or USB.
       </motion.p>
       <MSlider
