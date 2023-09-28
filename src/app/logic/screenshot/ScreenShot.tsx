@@ -4,7 +4,11 @@ import styles from "src/app/logic/screenshot/ScreenShot.module.scss";
 import {motion} from "framer-motion";
 import {animationX, animationY} from "src/app/components/animation/Animation";
 import {MSlider} from "src/app/components/swiper/Swiper";
-import IphoneSrc from "src/resources/slider-image.png";
+import ScreenAppSrc1 from "src/resources/screen-app-1.png";
+import ScreenAppSrc2 from "src/resources/screen-app-2.png";
+import ScreenAppSrc3 from "src/resources/screen-app-3.png";
+import ScreenAppSrc4 from "src/resources/screen-app-4.png";
+import ScreenAppSrc5 from "src/resources/screen-app-5.png";
 
 /**
  * ScreenShot section
@@ -14,7 +18,7 @@ export const ScreenShot: React.FC = () => {
   const TITLE_STYLES = clsx(styles.title);
   const TEXT_STYLES = clsx(styles.text);
 
-  const imgArray = [IphoneSrc, IphoneSrc, IphoneSrc, IphoneSrc, IphoneSrc];
+  const imgArray = [ScreenAppSrc1, ScreenAppSrc2, ScreenAppSrc3, ScreenAppSrc4, ScreenAppSrc5];
 
   return (
     <motion.section
@@ -46,6 +50,7 @@ export const ScreenShot: React.FC = () => {
           A report filling screen is also shown where the user has to fill in information
           about the vehicle, route and other details.
         </span>
+        <span>Click 2 times to enlarge the image</span>
       </motion.p>
       <MSlider
         images={imgArray} loopedSlides={2}

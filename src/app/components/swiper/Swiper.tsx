@@ -9,7 +9,8 @@ import "swiper/scss";
 import "swiper/scss/effect-coverflow";
 import "swiper/scss/pagination";
 import "swiper/scss/navigation";
-import {Autoplay, EffectCoverflow, Pagination, Navigation} from "swiper/modules";
+import "swiper/css/zoom";
+import {EffectCoverflow, Pagination, Navigation, Zoom} from "swiper/modules";
 
 /**
  * Images data type
@@ -45,10 +46,6 @@ export const Slider: React.FC<SliderInterface> = forwardRef((props: SliderInterf
     <article className={SLIDER_STYLES} ref={ref}>
       <article className={CONTAINER_STYLES}>
         <Swiper
-          autoplay={{
-            delay: 4500,
-            disableOnInteraction: false,
-          }}
           onBeforeInit={(swiper: any) => {
             swiperRef.current = swiper;
           }}
@@ -70,13 +67,16 @@ export const Slider: React.FC<SliderInterface> = forwardRef((props: SliderInterf
             prevEl: PREV_BTN_STYLES,
             nextEl: NEXT_BTN_STYLES,
           }}
-          modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
+          zoom
+          modules={[EffectCoverflow, Pagination, Navigation, Zoom]}
           className="mySwiper"
         >
           {props.images["map"]((img: any, index: number) => {
             return (
               <SwiperSlide key={index}>
-                <img alt="Bellfam App" src={img} />
+                <div className="swiper-zoom-container">
+                  <img alt="Bellfam App" src={img} />
+                </div>
               </SwiperSlide>
             );
           })}

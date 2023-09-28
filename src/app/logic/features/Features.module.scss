@@ -11,12 +11,12 @@
   background-color: #5956e9;
 
   &__container {
-    max-width: 1012px;
+    max-width: 1140px;
     margin: 60px auto 0 auto;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto auto;
-    gap: 0px 0px;
+    gap: 60px;
     justify-items: center;
     align-items: center;
     grid-auto-flow: row;
@@ -32,7 +32,7 @@
   }
   &__img img {
     position: relative;
-    left: 9%;
+    max-width: 375px;
     width: 100%;
     height: auto;
   }
@@ -166,7 +166,6 @@
 .system h5,
 .greaphics h5,
 .support h5 {
-  text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 38px;
