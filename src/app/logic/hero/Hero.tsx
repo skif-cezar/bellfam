@@ -23,7 +23,7 @@ export const Hero: React.FC = () => {
   const BUTTONS_STYLES = clsx(styles.buttons);
 
   return (
-    <section className={HERO_STYLES} id="download">
+    <section className={HERO_STYLES} id="home">
       <h1 className={TITLE_HIDDEN_STYLES}>ELD Fleet Management Platform. BELLFAM</h1>
       <motion.div
         className={HERO_CONTAINER_STYLES} initial="hidden"

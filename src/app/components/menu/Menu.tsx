@@ -13,7 +13,7 @@ export const Menu: React.FC = () => {
   const ACTIVE_MENU_STYLES = clsx(styles.menu__list, styles.menu_active);
   const MENU_ITEM_STYLES = clsx(styles.menu__item);
   const MENU_LINK_STYLES = clsx(styles.menu__link);
-  const ACTIVE_LINK_STYLES = clsx(styles.menu__item, styles.active);
+  const ACTIVE_LINK_STYLES = clsx(styles.active);
   const MOBILE_BUTTON_STYLES = clsx(styles.mobile_btn);
 
   const [nav, setNav] = useState(false);
@@ -33,7 +33,7 @@ export const Menu: React.FC = () => {
         <li className={MENU_ITEM_STYLES}>
           <Link
             className={MENU_LINK_STYLES}
-            to="download"
+            to="home"
             activeClass={ACTIVE_LINK_STYLES}
             smooth
             duration={500}
@@ -43,7 +43,7 @@ export const Menu: React.FC = () => {
             role="menuitem"
             aria-hidden="true"
           >
-            Download
+            Home
           </Link>
         </li>
         <li className={MENU_ITEM_STYLES}>
@@ -126,6 +126,12 @@ export const Menu: React.FC = () => {
             Contact Us
           </Link>
         </li>
+        <button
+          onClick={closeMenu} className={MOBILE_BUTTON_STYLES}
+          type="button"
+        >
+          {nav ? <AiOutlineClose size={25} /> : null}
+        </button>
       </ul>
       <button
         onClick={closeMenu} className={MOBILE_BUTTON_STYLES}

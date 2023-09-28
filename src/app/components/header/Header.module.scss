@@ -60,3 +60,20 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (max-width: 576px) {
+  .header {
+    margin: 40px auto 0 auto;
+    padding: 0 16px;
+  }
+  .logo {
+    width: 100px;
+    height: 60px;
+    top: 4px;
+    line-height: 60px;
+    padding: 0 10px;
+  }
+  .mail {
+    display: none;
+  }
+}
