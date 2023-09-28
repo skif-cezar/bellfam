@@ -1,8 +1,15 @@
 .about {
   width: 100%;
   min-height: 1014px;
-  padding: 120px 135px 120px 161px;
+  padding: 120px 40px;
   background-color: #fff;
+
+  &__img img {
+    position: relative;
+    max-width: 386px;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .title {
@@ -28,6 +35,7 @@
 .container {
   display: flex;
   margin: 60px auto 0 auto;
+  column-gap: 60px;
   max-width: 1144px;
   justify-content: space-between;
   align-items: center;
@@ -37,4 +45,32 @@
   display: flex;
   flex-direction: column;
   row-gap: 40px;
+}
+
+@media (max-width: 970px) {
+  .container {
+    margin: 40px auto 0 auto;
+    flex-direction: column;
+    row-gap: 70px;
+  }
+  .cards {
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .about {
+    &__img img {
+      max-width: 290px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .about {
+    padding: 60px 16px 92px 16px;
+  }
 }

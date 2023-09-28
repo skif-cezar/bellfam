@@ -11,6 +11,7 @@ import {MCard} from "src/app/components/card/Card";
  */
 export const About: React.FC = () => {
   const ABOUT_STYLES = clsx(styles.about);
+  const IMG_CONTAINER_STYLES = clsx(styles.about__img);
   const TITLE_STYLES = clsx(styles.title);
   const TEXT_STYLES = clsx(styles.text);
   const CONTAINER_STYLES = clsx(styles.container);
@@ -46,7 +47,10 @@ export const About: React.FC = () => {
         whileInView="visible"
         viewport={{amount: 0.2, once: true}}
       >
-        <motion.div custom={2} variants={animationX}>
+        <motion.div
+          custom={2} variants={animationX}
+          className={IMG_CONTAINER_STYLES}
+        >
           <img
             src={mobileAppSrc}
             alt="Screenshot of the application on a mobile device."

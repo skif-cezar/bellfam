@@ -2,7 +2,8 @@
   position: relative;
   width: 100%;
   max-width: 570px;
-  height: 160px;
+  height: auto;
+  min-height: 160px;
   padding: 30px 20px 21px 59px;
   border-radius: 10px;
   background: #fff;
@@ -30,12 +31,7 @@
 }
 
 .text {
-  display: -webkit-inline-box;
   margin-top: 12px;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  vertical-align: middle;
   font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
