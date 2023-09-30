@@ -69,3 +69,10 @@
 .next {
   order: 2;
 }
+
+@media (max-width: 992px) {
+  .prev,
+  .next {
+    display: none;
+  }
+}

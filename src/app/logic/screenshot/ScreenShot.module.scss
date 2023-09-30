@@ -33,3 +33,13 @@
   color: #232233;
   margin-top: 40px;
 }
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .interface {
+    padding: 60px 16px;
+  }
+}
+

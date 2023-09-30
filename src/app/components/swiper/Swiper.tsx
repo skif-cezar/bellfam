@@ -69,6 +69,10 @@ export const Slider: React.FC<SliderInterface> = forwardRef((props: SliderInterf
           }}
           zoom
           modules={[EffectCoverflow, Pagination, Navigation, Zoom]}
+          breakpoints={{
+            350: {slidesPerView: 1},
+            800: {slidesPerView: props.slidesPerView},
+          }}
           className="mySwiper"
         >
           {props.images["map"]((img: any, index: number) => {

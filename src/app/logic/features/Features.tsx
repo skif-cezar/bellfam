@@ -23,7 +23,8 @@ export const Features: React.FC = () => {
 
   return (
     <motion.section
-      className={FEATURES_STYLES} id="features"
+      className={FEATURES_STYLES}
+      id="features"
       initial="hidden"
       whileInView="visible"
       viewport={{amount: 0.2, once: true}}
@@ -38,12 +39,11 @@ export const Features: React.FC = () => {
         className={TEXT_STYLES} custom={3}
         variants={animationY}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est
-        tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper
-        velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+        Stay FMCSA compliant with easy to use/edit ELD app for drivers - Android & IOS supported.
       </motion.p>
       <motion.article
-        className={FEATURES_CONTAINER_STYLES} initial="hidden"
+        className={FEATURES_CONTAINER_STYLES}
+        initial="hidden"
         whileInView="visible"
         viewport={{amount: 0.2, once: true}}
       >
@@ -59,63 +59,76 @@ export const Features: React.FC = () => {
           />
         </motion.div>
         <motion.div
-          className={CHAT_STYLES} custom={2}
+          className={CHAT_STYLES}
+          custom={2}
           variants={animationY}
           initial="hidden"
           whileInView="visible"
           viewport={{amount: 0.2, once: true}}
         >
-          <h5>Full free chat</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h5>Multilingual Support Team</h5>
+          <p>
+            The multilingual team of ELD compliance experts makes communication easier than ever
+            before. We speak English and Russian.
+          </p>
         </motion.div>
         <motion.div
-          className={FEATURE_STYLES} initial="hidden"
+          className={FEATURE_STYLES}
+          initial="hidden"
           whileInView="visible"
-          viewport={{amount: 0.2, once: true}} custom={5}
+          viewport={{amount: 0.2, once: true}}
+          custom={5}
           variants={animationX}
         >
-          <h5>unlimiter features</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h5>Manage/Edit Logs</h5>
+          <p>Ensure HOS compliance with powerful electronic logbook management & editing.</p>
         </motion.div>
         <motion.div
-          className={DESIGN_STYLES} custom={6}
+          className={DESIGN_STYLES}
+          custom={6}
           variants={animationX}
           initial="hidden"
           whileInView="visible"
           viewport={{amount: 0.2, once: true}}
         >
           <h5>awsome ui design</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Modern and stylish user interface design. Our application provides maximum efficiency and ease of use.</p>
         </motion.div>
         <motion.div
-          className={SYSTEM_STYLES} custom={5}
+          className={SYSTEM_STYLES}
+          custom={5}
           variants={animationX}
           initial="hidden"
           whileInView="visible"
           viewport={{amount: 0.2, once: true}}
         >
-          <h5>iso & androind version</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h5>iOS & Androind version</h5>
+          <p>Get maximum efficiency and functionality with ISO and Android operating systems.</p>
         </motion.div>
         <motion.div
-          className={GREAPHICS_STYLES} custom={6}
+          className={GREAPHICS_STYLES}
+          custom={6}
           variants={animationX}
           initial="hidden"
           whileInView="visible"
           viewport={{amount: 0.2, once: true}}
         >
-          <h5>retina ready greaphics</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h5>Real-Time GPS Tracking</h5>
+          <p>Accurately track your vehicles and plan effectively with real time GPS locations monitoring solution.</p>
         </motion.div>
         <motion.div
-          className={SUPPORT_STYLES} custom={7}
+          className={SUPPORT_STYLES}
+          custom={7}
           variants={animationX}
           initial="hidden"
           whileInView="visible"
           viewport={{amount: 0.2, once: true}}
         >
           <h5>24/7 support by real pepole</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>
+            Get support when you need it the most via channels you prefer: phone, email, online
+            chat.
+          </p>
         </motion.div>
       </motion.article>
     </motion.section>

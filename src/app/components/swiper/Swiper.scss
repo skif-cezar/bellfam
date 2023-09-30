@@ -1,5 +1,5 @@
 .mySwiper {
-  min-height: 610px;
+  min-height: 688px;
 }
 
 .mySwiper .swiper-slide {
@@ -12,9 +12,9 @@
 
 .mySwiper .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
+  max-width: 320px !important;
+  height: auto !important;
 }
 
 .swiper-slide-shadow-left,
@@ -87,4 +87,24 @@
 
 .swiper-pagination .swiper-pagination-bullet-active {
   background: #5956e9;
+}
+
+@media (max-width: 1120px) {
+  .mySwiper .swiper-slide img {
+    max-width: 285px !important;
+  }
+
+  .mySwiper {
+    min-height: 625px;
+  }
+}
+
+@media (max-width: 992px) {
+  .mySwiper .swiper-slide img {
+    max-width: 237px !important;
+  }
+
+  .mySwiper {
+    min-height: 550px;
+  }
 }

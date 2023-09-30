@@ -54,7 +54,7 @@ export const ScreenShot: React.FC = () => {
       </motion.p>
       <MSlider
         images={imgArray} loopedSlides={2}
-        stretch={10} depth={100}
+        stretch={-10} depth={100}
         modifier={2.5} slidesPerView={5}
         initial="hidden"
         whileInView="visible"
