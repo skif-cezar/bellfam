@@ -275,7 +275,10 @@
   }
 }
 
-@media (max-width: 565px) {
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.5rem;
+  }
   .features {
     padding: 60px 35px 60px 35px;
   }
