@@ -69,7 +69,7 @@ export const About: React.FC = () => {
           <MCard
             initial="hidden"
             whileInView="visible"
-            viewport={{amount: 0.4, once: true}}
+            viewport={{amount: 0.2, once: true}}
             custom={2}
             variants={animationX}
             title="Dedicated Support Manager"
@@ -80,7 +80,7 @@ export const About: React.FC = () => {
           <MCard
             initial="hidden"
             whileInView="visible"
-            viewport={{amount: 0.5, once: true}}
+            viewport={{amount: 0.2, once: true}}
             custom={3}
             variants={animationX}
             title="Multilingual Support Team"

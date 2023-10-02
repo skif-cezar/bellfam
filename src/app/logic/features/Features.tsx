@@ -48,17 +48,6 @@ export const Features: React.FC = () => {
         viewport={{amount: 0.2, once: true}}
       >
         <motion.div
-          className={FEATURES_IMG_STYLES} custom={2}
-          variants={animationY}
-        >
-          <img
-            src={mobileAppSrc}
-            alt="Screenshot of the application on a mobile device."
-            width="375"
-            height="812"
-          />
-        </motion.div>
-        <motion.div
           className={CHAT_STYLES}
           custom={2}
           variants={animationY}
@@ -77,7 +66,7 @@ export const Features: React.FC = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{amount: 0.2, once: true}}
-          custom={5}
+          custom={2}
           variants={animationX}
         >
           <h5>Manage/Edit Logs</h5>
@@ -85,7 +74,7 @@ export const Features: React.FC = () => {
         </motion.div>
         <motion.div
           className={DESIGN_STYLES}
-          custom={6}
+          custom={2}
           variants={animationX}
           initial="hidden"
           whileInView="visible"
@@ -95,8 +84,19 @@ export const Features: React.FC = () => {
           <p>Modern and stylish user interface design. Our application provides maximum efficiency and ease of use.</p>
         </motion.div>
         <motion.div
+          className={FEATURES_IMG_STYLES} custom={2}
+          variants={animationY}
+        >
+          <img
+            src={mobileAppSrc}
+            alt="Screenshot of the application on a mobile device."
+            width="375"
+            height="812"
+          />
+        </motion.div>
+        <motion.div
           className={SYSTEM_STYLES}
-          custom={5}
+          custom={2}
           variants={animationX}
           initial="hidden"
           whileInView="visible"
@@ -107,7 +107,7 @@ export const Features: React.FC = () => {
         </motion.div>
         <motion.div
           className={GREAPHICS_STYLES}
-          custom={6}
+          custom={2}
           variants={animationX}
           initial="hidden"
           whileInView="visible"
@@ -118,7 +118,7 @@ export const Features: React.FC = () => {
         </motion.div>
         <motion.div
           className={SUPPORT_STYLES}
-          custom={7}
+          custom={2}
           variants={animationX}
           initial="hidden"
           whileInView="visible"

@@ -34,7 +34,7 @@ export const Hero: React.FC = () => {
           <span className={BORDER_STYLES}>Border</span>
           <article className={TEXT_CONTAINER_STYLES}>
             <motion.h2
-              className={TITLE_STYLES} custom={1}
+              className={TITLE_STYLES} custom={2}
               variants={animationX}
             >
               A Great App Makes Your Life Better
