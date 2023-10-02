@@ -19,7 +19,8 @@ export const Eld: React.FC = () => {
 
   return (
     <motion.section
-      className={INTERFACE_STYLES} id="eld"
+      className={INTERFACE_STYLES}
+      id="eld"
       initial="hidden"
       whileInView="visible"
       viewport={{amount: 0.2, once: true}}
@@ -34,20 +35,27 @@ export const Eld: React.FC = () => {
         className={TEXT_STYLES} custom={3}
         variants={animationY}
       >
-        Electronic logging devices are connected to engine control modules (ECM) via various
-        diagnostic ports and synchronized with trucks/buses, driver apps, and the fleet manager
-        portal. ELD hardware is proven to be reliable, can be installed in minutes, and
-        connected to most Android/IOS smartphones and tablets via Bluetooth or USB.
+        <span>
+          Electronic logging devices are connected to engine control modules (ECM) via various
+          diagnostic ports and synchronized with trucks/buses, driver apps, and the fleet manager
+          portal. ELD hardware is proven to be reliable, can be installed in minutes, and connected
+          to most Android/IOS smartphones and tablets via Bluetooth or USB.
+        </span>
+        <span>Click 2 times to enlarge the image</span>
       </motion.p>
       <MSlider
-        images={imgArray} loopedSlides={1}
-        stretch={0} depth={0}
-        modifier={0} slidesPerView={1}
+        images={imgArray}
+        loopedSlides={1}
+        stretch={0}
+        depth={0}
+        modifier={0}
+        slidesPerView={1}
         initial="hidden"
         whileInView="visible"
         viewport={{amount: 0.2, once: true}}
         custom={2}
         variants={animationX}
+        myClassName="mySwiperEld"
       />
     </motion.section>
   );

@@ -29,6 +29,7 @@ interface SliderInterface {
   depth: number;
   modifier: number;
   slidesPerView: number;
+  myClassName: string;
 }
 
 /**
@@ -73,7 +74,7 @@ export const Slider: React.FC<SliderInterface> = forwardRef((props: SliderInterf
             350: {slidesPerView: 1},
             800: {slidesPerView: props.slidesPerView},
           }}
-          className="mySwiper"
+          className={props.myClassName}
         >
           {props.images["map"]((img: any, index: number) => {
             return (

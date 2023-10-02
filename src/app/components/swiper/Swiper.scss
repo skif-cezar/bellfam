@@ -1,20 +1,15 @@
+.mySwiperEld,
 .mySwiper {
-  min-height: 688px;
+  padding-bottom: 45px !important;
 }
 
-.mySwiper .swiper-slide {
+.mySwiper .swiper-slide,
+.mySwiperEld .swiper-slide {
   opacity: 0.75;
 }
 
 .swiper-slide.swiper-slide-active {
   opacity: 1 !important;
-}
-
-.mySwiper .swiper-slide img {
-  display: block;
-  object-fit: cover;
-  max-width: 320px !important;
-  height: auto !important;
 }
 
 .swiper-slide-shadow-left,
@@ -23,7 +18,9 @@
 }
 
 .mySwiper .swiper-button-prev,
-.mySwiper .swiper-button-next {
+.mySwiper .swiper-button-next,
+.mySwiperEld .swiper-button-prev,
+.mySwiperEld .swiper-button-next {
   width: 84px;
   height: 84px;
   border-radius: 50%;
@@ -32,7 +29,9 @@
 }
 
 .mySwiper .swiper-button-prev:after,
-.mySwiper .swiper-button-next:after {
+.mySwiper .swiper-button-next:after,
+.mySwiperEld .swiper-button-prev:after,
+.mySwiperEld .swiper-button-next:after {
   content: "";
   display: block;
   width: 84px;
@@ -47,12 +46,15 @@
 }
 
 .mySwiper .swiper-button-next:after,
-.mySwiper .swiper-button-prev:after {
+.mySwiper .swiper-button-prev:after,
+.mySwiperEld .swiper-button-next:after,
+.mySwiperEld .swiper-button-prev:after {
   -webkit-mask-image: url(../../../resources/arrow-slider.svg);
   background-color: #5956e9;
 }
 
-.mySwiper .swiper-button-prev:after {
+.mySwiper .swiper-button-prev:after,
+.mySwiperEld .swiper-button-prev:after {
   transform: scale(-1);
 }
 
@@ -61,7 +63,13 @@
 .mySwiper .swiper-button-next:active:after,
 .mySwiper .swiper-button-prev:hover:after,
 .mySwiper .swiper-button-prev:focus:after,
-.mySwiper .swiper-button-prev:active:after {
+.mySwiper .swiper-button-prev:active:after,
+.mySwiperEld .swiper-button-next:hover:after,
+.mySwiperEld .swiper-button-next:focus:after,
+.mySwiperEld .swiper-button-next:active:after,
+.mySwiperEld .swiper-button-prev:hover:after,
+.mySwiperEld .swiper-button-prev:focus:after,
+.mySwiperEld .swiper-button-prev:active:after {
   background-color: #fff;
 }
 
@@ -70,7 +78,13 @@
 .mySwiper .swiper-button-next:active,
 .mySwiper .swiper-button-prev:hover,
 .mySwiper .swiper-button-prev:focus,
-.mySwiper .swiper-button-prev:active {
+.mySwiper .swiper-button-prev:active,
+.mySwiperEld .swiper-button-next:hover,
+.mySwiperEld .swiper-button-next:focus,
+.mySwiperEld .swiper-button-next:active,
+.mySwiperEld .swiper-button-prev:hover,
+.mySwiperEld .swiper-button-prev:focus,
+.mySwiperEld .swiper-button-prev:active {
   background-color: #5956e9;
 }
 
@@ -79,7 +93,8 @@
   bottom: 0;
 }
 
-.mySwiper .swiper-pagination .swiper-pagination-bullet {
+.mySwiper .swiper-pagination .swiper-pagination-bullet,
+.mySwiperEld .swiper-pagination .swiper-pagination-bullet {
   width: 16px;
   height: 16px;
   margin: 0 18px 0 0 !important;
@@ -89,22 +104,7 @@
   background: #5956e9;
 }
 
-@media (max-width: 1120px) {
-  .mySwiper .swiper-slide img {
-    max-width: 285px !important;
-  }
-
-  .mySwiper {
-    min-height: 625px;
-  }
-}
-
-@media (max-width: 992px) {
-  .mySwiper .swiper-slide img {
-    max-width: 237px !important;
-  }
-
-  .mySwiper {
-    min-height: 550px;
-  }
+.swiper-container-horizontal > .swiper-pagination {
+  position: absolute;
+  bottom: 0;
 }

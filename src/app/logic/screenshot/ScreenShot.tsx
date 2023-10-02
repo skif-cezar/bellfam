@@ -1,6 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "src/app/logic/screenshot/ScreenShot.module.scss";
+import "src/app/logic/screenshot/Slider.scss";
 import {motion} from "framer-motion";
 import {animationX, animationY} from "src/app/components/animation/Animation";
 import {MSlider} from "src/app/components/swiper/Swiper";
@@ -61,6 +62,7 @@ export const ScreenShot: React.FC = () => {
         viewport={{amount: 0.2, once: true}}
         custom={2}
         variants={animationX}
+        myClassName="mySwiper"
       />
     </motion.section>
   );
