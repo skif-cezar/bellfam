@@ -68,7 +68,7 @@ export const Slider: React.FC<SliderInterface> = forwardRef((props: SliderInterf
             prevEl: PREV_BTN_STYLES,
             nextEl: NEXT_BTN_STYLES,
           }}
-          zoom
+          zoom={{maxRatio: 2}}
           modules={[EffectCoverflow, Pagination, Navigation, Zoom]}
           breakpoints={{
             350: {slidesPerView: 1},
