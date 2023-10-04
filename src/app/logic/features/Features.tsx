@@ -80,7 +80,7 @@ export const Features: React.FC = () => {
           whileInView="visible"
           viewport={{amount: 0.2, once: true}}
         >
-          <h5>awsome ui design</h5>
+          <h5>awesome ui design</h5>
           <p>Modern and stylish user interface design. Our application provides maximum efficiency and ease of use.</p>
         </motion.div>
         <motion.div
