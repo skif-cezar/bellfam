@@ -5,13 +5,14 @@ import {Controller, Message, useForm} from "react-hook-form";
 import InputMask from "react-input-mask";
 import clsx from "clsx";
 import styles from "src/app/components/form/Form.module.scss";
+import {setFormData} from "src/app/services/setFormData";
 
 export type FieldsForm = {
-  fname?: string;
-  lname?: string;
+  fname: string;
+  lname: string;
   email?: string;
   message?: Message;
-  tel?: string;
+  tel: string;
   comment?: string;
 };
 
@@ -32,21 +33,7 @@ export const Form: React.FC = forwardRef((props: any, ref:any) => {
   } = useForm<FieldsForm>({mode: "onBlur"});
 
   const onSubmit = async (data: FieldsForm): Promise<void> => {
-    try {
-      const response = await fetch("/post", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify(data),
-      });
-
-      const result = await response.json();
-      // eslint-disable-next-line no-console
-      console.log(result);
-      reset();
-      reset({tel: ""});
-    } catch (error) {
-      console.error(error);
-    }
+    setFormData(data, reset);
   };
 
   return (
